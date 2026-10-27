@@ -1,0 +1,32 @@
+.header {
+  min-height: var(--header-height);
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-title {
+  font-size: 1.25rem;
+}
+
+.header-date {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 10px 16px;
+  }
+
+  .header-title {
+    font-size: 1.1rem;
+  }
+}

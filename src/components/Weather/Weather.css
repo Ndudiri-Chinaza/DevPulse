@@ -1,0 +1,128 @@
+.weather-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-form-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.weather-form {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+}
+
+.weather-current {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 4px 0 18px;
+}
+
+.weather-icon {
+  color: var(--warning);
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.weather-temp {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.weather-desc {
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.weather-city {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 0 0 18px;
+}
+
+.weather-details div {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+}
+
+.weather-details dt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.weather-details dd {
+  margin: 4px 0 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.weather-forecast-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.weather-days {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-day {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 2px;
+  border-bottom: 1px solid var(--border);
+}
+
+.weather-day:last-child {
+  border-bottom: none;
+}
+
+.weather-day-name {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.weather-day-icon {
+  color: var(--warning);
+  display: inline-flex;
+}
+
+.weather-day-temps {
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  min-width: 64px;
+  justify-content: flex-end;
+}
+
+.weather-low {
+  color: var(--text-muted);
+  font-weight: 500;
+}

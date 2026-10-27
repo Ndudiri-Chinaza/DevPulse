@@ -1,0 +1,253 @@
+.github-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.github-form {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  min-width: 280px;
+}
+
+.github-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.github-stats-card,
+.github-activity-card {
+  position: relative;
+}
+
+.github-profile {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.github-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: var(--surface-2);
+  flex-shrink: 0;
+}
+
+.github-profile-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.github-name {
+  font-size: 1.15rem;
+  word-break: break-word;
+}
+
+.github-handle {
+  color: var(--accent);
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 2px 0 8px;
+}
+
+.github-handle:hover {
+  text-decoration: underline;
+}
+
+.github-bio {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  word-break: break-word;
+}
+
+.github-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 18px 0 0;
+}
+
+.github-stat {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  text-align: center;
+}
+
+.github-stat dt {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.github-stat dd {
+  margin: 4px 0 0;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.github-card-icon {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  font-size: 2.6rem;
+  color: var(--surface-3);
+  pointer-events: none;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--surface-3);
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.activity-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.activity-title {
+  font-size: 0.92rem;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.activity-when {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
+@media (min-width: 700px) {
+  .github-cards {
+    grid-template-columns: minmax(260px, 0.9fr) 2fr;
+    align-items: start;
+  }
+}
+
+.repos-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.repo-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.repo-item:last-child {
+  border-bottom: none;
+}
+
+.repo-name {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+.repo-name:hover {
+  text-decoration: underline;
+}
+
+.repo-description {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  margin-top: 4px;
+  word-break: break-word;
+}
+
+.repo-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 8px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.repo-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.repo-meta-item svg {
+  font-size: 0.85rem;
+}
+
+.github-repos-card {
+  grid-column: 1 / -1;
+}
+
+.repo-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0 14px;
+  margin-bottom: 10px;
+  transition: border-color 0.15s ease;
+}
+
+.repo-search:focus-within {
+  border-color: var(--accent);
+}
+
+.repo-search-icon {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.repo-search input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  padding: 10px 0;
+  font-size: 0.95rem;
+}
+
+.repo-search input::placeholder {
+  color: var(--text-muted);
+}
+
+.repo-search input:focus {
+  outline: none;
+}
